@@ -4,16 +4,16 @@ import FormField from './formfield/FormField';
 import CoolButton from './coolbutton/CoolButton';
 import 'bulma/css/bulma.css';
 
-const App = () => {
+const Signup = () => {
   return (
-    <div className="App">
+    <div className="Signup">
     <Navbar />
     <FormField label="Name" type="text" placeholder="e.g Alex Smith" />
     <FormField label="Email" type="email" placeholder="e.g. alexsmith@gmail.com" />
-    <CoolButton isSmall isDanger className="is-rounded my-class">Button 1</CoolButton>
-    <CoolButton isSmall isSuccess>Button 2</CoolButton>
+    <FormField label="Password" type="password" placeholder="****" />
+    <CoolButton className="isSmall isSuccess">Submit</CoolButton>
     </div>
   )
 };
 
-export default App;
+export default Signup;
