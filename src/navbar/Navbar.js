@@ -1,6 +1,8 @@
 import React from 'react';
 import "bulma/css/bulma.css";
 
+
+
 function Navbar(){
     return(
     <div>
@@ -24,9 +26,9 @@ function Navbar(){
             </a>
             </div>
 
-            <div class="navbar-end">
+           <div class="navbar-end">
             <div class="navbar-item">
-                <div class="buttons">
+              <div class="buttons">
                 <a class="button is-primary">
                     <strong>Sign up</strong>
                 </a>
@@ -34,6 +36,8 @@ function Navbar(){
                     Log in
                 </a>
                 </div>
+             
+
             </div>
             </div>
         </div>
