@@ -41,7 +41,7 @@ const Button = props => {
     });
     console.log(styleArr);
     return (
-        <button className={styleArr + " "+ props.className} >Rounded</button>
+        <button className={styleArr + " "+ props.className} >{props.children}</button>
     )
 };
 
