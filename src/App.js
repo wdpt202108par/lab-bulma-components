@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./navbar/Navbar";
 import Formfield from "./formfield/FormField";
+import Coolbtn from "./coolbutton/CoolButton";
 
 // import Bulma CSS
 import "bulma/css/bulma.css";

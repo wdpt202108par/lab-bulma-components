@@ -1,4 +1,5 @@
 import React from "react";
+import Coolbtn from "../coolbutton/CoolButton";
 
 function Navbar(props) {
 	return (
@@ -33,19 +34,11 @@ function Navbar(props) {
 					<div className="navbar-item">
 						<div className="field is-grouped">
 							<p className="control">
-								<a
-									className="bd-tw-button button"
-									data-social-network="Twitter"
-									data-social-action="tweet"
-								>
+								<Coolbtn>
 									<span>Login</span>
-								</a>
+								</Coolbtn>
 							</p>
-							<p className="control">
-								<a className="button is-primary">
-									<span>Signup</span>
-								</a>
-							</p>
+							<p className="control"></p>
 						</div>
 					</div>
 				</div>

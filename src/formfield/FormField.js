@@ -9,6 +9,7 @@ function Formfield(props) {
 					<input className="input" type="text" placeholder="e.g Alex Smith" />
 				</div>
 			</div>
+
 			<div className="field">
 				<label className="label">Email</label>
 				<div className="control">
