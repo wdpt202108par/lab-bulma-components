@@ -4,7 +4,7 @@ import "bulma/css/bulma.css";
 function CoolButton(props) {
 	let klass = `button ${props.className}`; // "is-rounded my-class"
 	if (props.isDanger) {
-		klass += "is-danger";
+		klass += " is-danger";
 	}
 	if (props.isSuccess) {
 		klass += " is-success";
