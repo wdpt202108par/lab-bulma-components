@@ -1,7 +1,16 @@
 import React from 'react';
+import CoolButton from './coolbutton/CoolButton.js';
+import FormField from './formfield/FormField.js';
+import Navbar from './navbar/Navbar.js';
 
 const App = () => {
-  return <h1>Bulma</h1>;
+  return  (
+    <div className="App">
+        <Navbar />
+        <FormField label="Firstname" type="text" placeholder="John" />
+        <FormField label="Couriel" type="email" placeholder="jdoe@gmail.com" />
+    </div>
+  );
 };
 
 export default App;
