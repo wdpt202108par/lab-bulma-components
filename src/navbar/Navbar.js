@@ -1,51 +1,42 @@
 import React from 'react';
 import "bulma/css/bulma.css";
+import CoolButton from '../coolbutton/CoolButton.js';
 
-
-
-function Navbar(){
-    return(
+function Navbar() {
+  return (
     <div>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
+          <a class="navbar-item" href="https://bulma.io">
             <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
-            </a>
+          </a>
 
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-            </a>
+          </a>
         </div>
 
         <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
+          <div class="navbar-start">
             <a class="navbar-item">
-                Home
+              Home
             </a>
-            </div>
+          </div>
 
-           <div class="navbar-end">
+          <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <a class="button is-primary">
-                    <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                    Log in
-                </a>
-                </div>
-             
-
+                <CoolButton class="button is-success">Log in</CoolButton>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
-        </nav> 
-
+      </nav> 
     </div>
 
-    )
+  )
 }
 
 export default Navbar;
