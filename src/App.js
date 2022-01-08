@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./navbar/Navbar";
-import Formfield from "./formfield/FormField";
+import FormField from "./formfield/FormField";
 import Coolbtn from "./coolbutton/CoolButton";
 
 // import Bulma CSS
@@ -10,7 +10,12 @@ const App = () => {
 	return (
 		<div>
 			<Navbar></Navbar>
-			<Formfield></Formfield>
+			<FormField label="Name" type="text" placeholder="e.g Alex Smith" />
+			<FormField
+				label="Email"
+				type="email"
+				placeholder="e.g. alexsmith@gmail.com"
+			/>
 		</div>
 	);
 };
