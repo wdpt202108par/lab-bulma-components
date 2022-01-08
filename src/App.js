@@ -1,14 +1,17 @@
-import React from 'react';
-import Navbar from './navbar/Navbar'
+import React from "react";
+import Navbar from "./navbar/Navbar";
+import Formfield from "./formfield/FormField";
 
 // import Bulma CSS
-import 'bulma/css/bulma.css';
-
+import "bulma/css/bulma.css";
 
 const App = () => {
-  console.log(`test`, Navbar);
-  return <Navbar></Navbar>;
+	return (
+		<div>
+			<Navbar></Navbar>
+			<Formfield></Formfield>
+		</div>
+	);
 };
-
 
 export default App;
