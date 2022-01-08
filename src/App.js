@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./navbar/Navbar";
 import FormField from "./formfield/FormField";
-import Coolbtn from "./coolbutton/CoolButton";
+import CoolButton from "./coolbutton/CoolButton";
 
 // import Bulma CSS
 import "bulma/css/bulma.css";
@@ -16,6 +16,14 @@ const App = () => {
 				type="email"
 				placeholder="e.g. alexsmith@gmail.com"
 			/>
+
+			<CoolButton isSmall isDanger className="is-rounded my-class">
+				Login
+			</CoolButton>
+
+			<CoolButton isSmall isSuccess className="is-rounded my-class">
+				Signup
+			</CoolButton>
 		</div>
 	);
 };

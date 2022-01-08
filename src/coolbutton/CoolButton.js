@@ -1,14 +1,17 @@
 import React from "react";
+import "bulma/css/bulma.css";
 
-function Coolbtn(props) {
+function CoolButton(props) {
+	let klass = `button ${props.className}`; // "is-rounded my-class"
+
+	// si on a recu la prop isSmall => rajouter la classe 'is-small' a `klass`
+	// si on a recu la prop isDanger => rajouter la classe 'is-danger' a `klass`
+
 	return (
 		<div>
-			<button className="button is-rounded my-class isPrimary is-small">
-				Login
-			</button>
-			<button className="button is-small is-success">Signup</button>
+			<button className={klass}> {props.children}</button>
 		</div>
 	);
 }
 
-export default Coolbtn;
+export default CoolButton;
